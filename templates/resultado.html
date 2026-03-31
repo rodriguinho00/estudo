@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="mb-4">Resultado</h2>
+
+<div class="card p-4 shadow">
+
+    <p><strong>Gorjeta:</strong> R$ {{ gorjeta | round(2) }}</p>
+    <p><strong>Total:</strong> R$ {{ total | round(2) }}</p>
+    <p><strong>Por pessoa:</strong> R$ {{ por_pessoa | round(2) }}</p>
+
+    <p>
+        <strong>Classificação:</strong> 
+        {% if classificacao == "Mão de vaca" %}
+    <span class="badge bg-danger">{{ classificacao }}</span>
+
+{% elif classificacao == "Legal" %}
+    <span class="badge bg-warning text-dark">{{ classificacao }}</span>
+
+{% else %}
+    <span class="badge bg-success">{{ classificacao }}</span>
+{% endif %}
+    </p>
+
+</div>
+
+<a href="/" class="btn btn-secondary mt-3">Novo cálculo</a>
+
+{% endblock %}
