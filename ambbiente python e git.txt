@@ -158,6 +158,11 @@ if __name__ == '__main__':
 * Código salvo no GitHub com segurança
 
 ---
+Caso já tenha subido o projeto e quer subir 
+as alteraçoes, não esqueça os commit -m e 
+o git add . para subir tudo que você 
+atualizou.
+
 
 projeto-web/
 │
