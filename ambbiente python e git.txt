@@ -180,5 +180,5 @@ projeto-web/
     └── imgs/
 ```
 
-
+python -m venv venv - adicionando o venv
 
